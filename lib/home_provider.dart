@@ -8,7 +8,7 @@ class HomeProvider with ChangeNotifier {
   setData() {
     data.clear();
     for (var i = 0; i < 100; i++) {
-      data.add(new ItemModel('name $i', 'code $i', Colors.blue));
+      data.add(new ItemModel('Item $i', 'code $i', Colors.blue));
     }
     notifyListeners();
   }
