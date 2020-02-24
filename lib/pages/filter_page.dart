@@ -1,5 +1,5 @@
-import 'package:filter_provider/filter_provider.dart';
-import 'package:filter_provider/home_provider.dart';
+import 'package:filter_provider/providers/filter_provider.dart';
+import 'package:filter_provider/providers/home_provider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

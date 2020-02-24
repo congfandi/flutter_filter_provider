@@ -1,6 +1,6 @@
-import 'package:filter_provider/filter_page.dart';
-import 'package:filter_provider/home_provider.dart';
-import 'package:filter_provider/item_model.dart';
+import 'package:filter_provider/pages/filter_page.dart';
+import 'package:filter_provider/providers/home_provider.dart';
+import 'package:filter_provider/models/item_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

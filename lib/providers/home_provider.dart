@@ -1,4 +1,4 @@
-import 'package:filter_provider/item_model.dart';
+import 'package:filter_provider/models/item_model.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,9 +9,10 @@ class HomeProvider with ChangeNotifier {
   Filter filter = Filter.semua;
 
   setData() {
+    filter = Filter.semua;
     data.clear();
     for (var i = 0; i < 100; i++) {
-      data.add(new ItemModel('Item ${i + 1}', 'code $i', Colors.blue));
+      data.add(new ItemModel('Item ${i + 1}', i + 1, Colors.blue));
     }
     notifyListeners();
   }
@@ -24,9 +25,10 @@ class HomeProvider with ChangeNotifier {
   }
 
   tampilkanGenap() {
+    setData();
     filter = Filter.genap;
     for (var i = 0; i < data.length; i++) {
-      if ((i + 1) % 2 == 0) {
+      if (data[i].code % 2 == 1) {
         data.removeAt(i);
       }
     }
@@ -34,9 +36,10 @@ class HomeProvider with ChangeNotifier {
   }
 
   tampilkanGanjil() {
+    setData();
     filter = Filter.ganjil;
     for (var i = 0; i < data.length; i++) {
-      if ((i + 1) % 2 != 0) {
+      if (data[i].code % 2 == 0) {
         data.removeAt(i);
       }
     }

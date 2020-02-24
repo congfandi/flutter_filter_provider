@@ -1,4 +1,4 @@
-import 'package:filter_provider/home.dart';
+import 'package:filter_provider/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

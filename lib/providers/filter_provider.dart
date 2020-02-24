@@ -1,4 +1,4 @@
-import 'package:filter_provider/home_provider.dart';
+import 'package:filter_provider/providers/home_provider.dart';
 import 'package:flutter/material.dart';
 
 class FilterProvider with ChangeNotifier {
