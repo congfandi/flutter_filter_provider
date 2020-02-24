@@ -1,4 +1,4 @@
-# chart_bloc
+# filter_provider
 
 A new Flutter project.
 
