@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       create: (_) => new HomeProvider(),
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Filter"),
+          title: Text("Filter Provider"),
           actions: <Widget>[
             Consumer<HomeProvider>(
               builder: (_, hp, __) => IconButton(
